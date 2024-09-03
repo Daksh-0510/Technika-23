@@ -1,0 +1,30 @@
+/* ...existing CSS... */
+
+.box {
+    /* ...existing properties... */
+    overflow: hidden;
+}
+
+.box:hover .icon {
+    /* ...existing properties... */
+    animation: scale-down 0.3s ease-in-out;
+}
+
+.box .text {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.box:hover .text {
+    opacity: 1;
+}
+
+@keyframes scale-down {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0.8);
+    }
+}
